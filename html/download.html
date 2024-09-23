@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixe o FV</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+    <center><img src="img/banner.png" class="banner"></center>
+
+
+<!--  NavBar  -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="container-fluid">
+
+      <!--  Sobre -->
+      <a class="navbar-brand" href="Sobre.html">Sobre</a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav">
+
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Fam.html">Home</a>
+          </li>
+
+
+          <!-- Help -->
+          <li class="nav-item">
+            <a class="nav-link" href="Suporte.html">Suporte</a>
+          </li>
+
+
+          <!-- Updates -->
+          <li class="nav-item">
+            <div class="popup" onclick="myFunction()"><a class="nav-link" aria-current="page">Atualizações</a>
+              <span class="popuptext" id="myPopup">Em manutenção...</span>
+            </div>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </div>
+
+</nav>
+
+<br>
+<br>
+<br>
+
+<center>
+    <h1>Baixe o app "<color class="fam">Família</color><color class="vet"> Vetshop</color>"</h1>
+    <h3>E nos permita ajudar a cuidar do seu amor pet.</h3>
+    <br>
+  <img src="img/QRCode/qrcode_download.png" class="QRCode">
+  <br>
+  <br>
+</center>
+    
+</body>
+
+
+<style>
+
+/*  QRCode  */
+  .QRCode{
+    height: 350px;
+    width: 350px;
+  }
+
+/*  Nome  */
+  .fam{
+    color: rgb(84, 185, 99);
+
+  }
+
+  .vet{
+    color: rgb(87, 129, 165);
+  }
+
+/***************************/
+
+/* Popup container */
+    .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    }
+
+/* The actual popup (appears on top) */
+    .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    }
+
+/* Popup arrow */
+    .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    }
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+    .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+    }
+
+/* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+    }
+
+/*  Banner  */
+    .banner{
+        height: 91px;
+        width: 1500px;
+    }
+</style>
+
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+</script>
+
+
+</html>
